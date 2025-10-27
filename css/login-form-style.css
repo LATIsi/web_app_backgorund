@@ -1,0 +1,115 @@
+/* Tilt Warp font */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.inter-login-font {
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+  color:white;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.roboto-login-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+  font-size: 1.5rem;
+  font-variation-settings:
+    "wdth" 100;
+  background: none;
+  border: none;
+  color:white;
+  width: calc(50vw - 5rem);
+  text-align: center;
+}
+
+.roboto-login-font::placeholder {
+	color: #ffffff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+    display:none;
+}
+
+body{
+    position: relative;
+}
+
+.wrap{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+
+.login-form , .join{
+    position: relative;
+    z-index: 100;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    text-align: center;
+}
+
+img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.background-black{
+    background: linear-gradient(to bottom, #d6d6d631 32%, rgba(0,0,0, 0.98) 89%); 
+    backdrop-filter: blur(5px); 
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.login-form>button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    font-variation-settings:
+    "wdth" 100;
+    margin-bottom: -10px;
+}
+
+.login-form>hr{
+    margin-top: 20px;
+    border: 1px white solid;
+}

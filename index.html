@@ -3,56 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login-form-style.css" />
+    <link rel="stylesheet" href="css/join-style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>todo_list</title>
   </head>
   <body>
-    <!-- 이름 입력 form -->
+   
     <div class="wrap">
+     <!-- 이름 입력 form -->
       <form class="login-form hidden">
-        <span>TODO_LIST</span>
-        <input ld="login-text" maxlength="15" required type="text" placeholder="당신의 이름은?" />
+        <span class="inter-login-font">TODO_LIST</span>
+        <input ld="login-text" class="roboto-login-font" maxlength="15" required type="text" placeholder="당신의 이름은?" />
         <button>→</button>
         <hr>
       </form>
       
-     
+    <!-- 이름 입력 후 화면 -->
       <div class="join hidden">
         <h1 class="greeting"></h1>
         <h2 id="nowdate"> 2025년 10월 6일 월요일</h2>
-        <h2 id="clock">00 : 00</h2>
+        <h2 id="clock" class="sora-time-font">00 : 00</h2>
 
-        <form class="todo-form">
-          <span class="todolist_button">
-            todo list
-          </span>
-          <div class="todo_wrap hidden">
-            <span>todo list</span>
-            <span>0</span>
-            <input class="todolist-text" required type="text" placeholder="당신이 할 일을 작성 해 주세요!" />
-            <ul class="todo-list">
+
+    <!-- 투두 리스트 화면 -->
+      <form class="todo-form">
+        <span class="todolist_button">
+          todo list
+        </span>
+        <div class="todo_wrap hidden">
+          <span>todo list</span>
+          <span>0</span>
+          <input class="todolist-text" required type="text" placeholder="당신이 할 일을 작성 해 주세요!" />
+          <ul class="todo-list">
                   
-            </ul>
-          </div>
-           
-        </form>
+          </ul>
+        </div>   
+      </form>
 
 
+      <!-- 명언과 날씨 -->
 
-        <div id="quote">
-          <div id="weather">
+      <div class="footer_wrap">
+        <div id="weather">
             <span>your city</span>
             <span>your weather / temp</span>
-          </div>
-          <span></span>
-          <hr>
-          <span></span>
-          <span></span>
         </div>
 
+        <hr>
+
+        <div id="quote">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
       </div>
-      
+
+
+
+    </div>
+
+    <!-- 백그라운드 효과 -->
+    <div class="background-black">
+        
     </div>
 
     <script src="./js/login.js"></script>

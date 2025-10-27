@@ -17,18 +17,25 @@ function onGeoOK(position){
      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
      fetch(url).then( (response) => response.json()).then( (data) =>{
-          const city = document.querySelector("#weather span:first-child");
-          const weather = document.querySelector("#weather span:last-child");
-          // 도시 이름 지정
-          city.innerText = data.name;
+          
+          const temp = document.querySelector("#weather span:first-child");
+          const city = document.querySelector("#weather span:last-child");
+          const icon = data.weather[0].icon;
           // 날씨 및 섭씨 지정
-          weather.innerText = `${data.weather[0].main} / ${data.main.temp}`
+          temp.innerText = `${data.main.temp}`
+          // 도시 이름 지정 
+          city.innerText = `${data.name}`;
+
+          const weather = document.createElement("img");
+          weather.src = `https://openweathermap.org/img/wn/${icon}@2x.png`
+          document.body.querySelector("#weather").appendChild(weather);
      });
 
 
 }
 
-// 작동하지 않을때 나올 함수
+// 작동하지 않을때 나올 함수  weather.src = `https://openweathermap.org/img/wn/${data.main.icon}`
+         
 function onGeoError(err){
      alert("사용권한을 허용하지 않았거나 사용자의 위치를 찾을 수가 없습니다.");
 }

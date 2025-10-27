@@ -19,7 +19,6 @@ const TODOS_KEY ="todoList";
 
 // 객체를 받음
 function setToDo(newToDoObj){
-     console.log("1. settodo작동");
      // 태그들 createElement으로 생성하기
      const li = document.createElement("li");
      // 리스트로 만들어진 li의 id를 객체로 받아온 date id로 지정. 삭제할때 찾아올것.
@@ -38,12 +37,10 @@ function setToDo(newToDoObj){
 
      // todo-list의 li중 삭제버튼 누르면 삭제 함수 실행
      toDoDeleteButton.addEventListener("click", deleteTodo);
-     console.log("settodo끝남");
 }
 
  // todo-list 생성 함수
 function toDoSubmit(event){
-     console.log("2. toDoSubmit작동");
      event.preventDefault();
      const newTodo = toDoInput.value;
      // text는 적은 투두 리스트 내용, ID는 리스트 구별용(DATE)
@@ -58,7 +55,6 @@ function toDoSubmit(event){
      setToDo(newToDoObj);
      todoGetList.push(newToDoObj);
      localStorageSaveToDos();
-     console.log("toDoSubmit끝남");
 
 
      // 추가한 뒤 리스트 갯수 새로고침
@@ -86,9 +82,7 @@ function deleteTodo(event){
 
  //로컬 스토로지는 배열 저장이 안되기에 JSON.stringify 으로 JSON 형태의 문자열 저장
 function localStorageSaveToDos(){
-     console.log("4. localStorageSaveToDos작동");
      localStorage.setItem(TODOS_KEY, JSON.stringify(todoGetList));
-     console.log("localStorageSaveToDos끝남");
 }
 
 toDoForm.addEventListener("submit", toDoSubmit);

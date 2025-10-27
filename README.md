@@ -139,6 +139,18 @@ index.html을 연다
 
 <br>
 
+- OpenWeather API에서 날씨 이미지 가져오기
+
+<a>http://kingkongcoding.tistory.com/188</a>
+
+<br>
+
+- 폰트 px->rem 변환기
+
+<a>https://nekocalc.com/px-to-rem-converter</a>
+
+<br>
+
 
 
 <br>
