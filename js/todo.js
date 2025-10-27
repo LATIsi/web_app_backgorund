@@ -110,11 +110,10 @@ if(toDoArr !== null){
      toDoLength.innerText = todoGetList.length;
 }
 
+// todo list 버튼 클릭시 리스트 보여줌
 function clickToDosButton(event){
-     console.log("5. clickToDosButton작동");
      event.preventDefault();
      toDoWrap.classList.toggle(hiddenClassName_todo);
-     console.log("clickToDosButton끝남");
 }
 
 
