@@ -31,8 +31,6 @@ function onGeoOK(position){
 // 작동하지 않을때 나올 함수
 function onGeoError(err){
      alert("사용권한을 허용하지 않았거나 사용자의 위치를 찾을 수가 없습니다.");
-     console.error("에러 코드:", err.code);
-     console.error("메시지:", err.message);
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOK, onGeoError);

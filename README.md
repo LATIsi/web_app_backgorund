@@ -19,14 +19,14 @@ GitHub Pages url : <a>https://LATIsi.github.io/web_app_backgorund</a>
 </br>
 
 ## PC
-<img width="758" height="466" alt="Image" src="https://github.com/user-attachments/assets/5512daf7-7a69-4131-bea1-b6fbfc7c5721" />
+<img width="963" height="582" alt="Image" src="https://github.com/user-attachments/assets/a3e2d21d-1ae8-49a9-9739-41128ebd45da" />
 </br>
 
 1920px * 1080px 해상도 기준
 
 
 ## 모바일
-<img width="595" height="432" alt="Image" src="https://github.com/user-attachments/assets/069e3505-6fe7-4ebe-b00d-270b8f965b2c" />
+<img width="735" height="528" alt="Image" src="https://github.com/user-attachments/assets/7a759a5c-6dc0-488e-ac86-cc5e7789041c" />
 </br>
 360px * 800px 해상도 기준
 
@@ -132,6 +132,14 @@ index.html을 연다
 <a>https://velog.io/@2ast/Github-Github-actions%EC%97%90%EC%84%9C-Secrets%EB%A1%9C-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0</a>
 
 <br>
+
+- 모달 외부영역 클릭시 JS 활용법
+
+<a>https://stackoverflow.com/questions/36695438/detect-click-outside-div-using-javascript</a>
+
+<br>
+
+
 
 <br>
 
