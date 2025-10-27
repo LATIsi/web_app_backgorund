@@ -19,14 +19,14 @@ GitHub Pages url : <a>https://LATIsi.github.io/web_app_backgorund</a>
 </br>
 
 ## PC
-<img width="752" height="716" alt="Image" src="https://github.com/user-attachments/assets/cfb7fbe2-7b93-43ef-8cf0-a159c1ac03be" />
+<img width="758" height="466" alt="Image" src="https://github.com/user-attachments/assets/5512daf7-7a69-4131-bea1-b6fbfc7c5721" />
 </br>
 
 1920px * 1080px 해상도 기준
 
 
 ## 모바일
-<img width="681" height="416" alt="Image" src="https://github.com/user-attachments/assets/e77d0cd7-9c7b-4dac-a23d-a3ad383d895f" />
+<img width="595" height="432" alt="Image" src="https://github.com/user-attachments/assets/069e3505-6fe7-4ebe-b00d-270b8f965b2c" />
 </br>
 360px * 800px 해상도 기준
 
