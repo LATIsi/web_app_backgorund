@@ -85,7 +85,7 @@ a{
   right: 0.5rem;
   top:4.4rem;
   height: auto;
-  padding:1rem 2rem;
+  padding:1rem 2rem 1.2rem 2rem;
   border-radius: 30px;
   background-color: #F8F8F8;
   color:#000000;
@@ -135,8 +135,15 @@ a{
   background-size: 25px auto;
 }
 
+
 .todo-list{
-  margin-bottom: 3px;
+  max-height: 60dvh;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+.todo-list::-webkit-scrollbar{
+   display:none;
 }
 
 li{
@@ -159,9 +166,11 @@ li:last-child{
 }
 
 li>span{
+  width: 280px;
   margin-right: 1rem;
   flex-grow: 2;
   font-size: 0.875rem;
+
 }
 
 li>a{
