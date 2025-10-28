@@ -16,7 +16,7 @@
     "XROT" 0,
     "YROT" 0;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .roboto-login-font {
@@ -34,7 +34,7 @@
 }
 
 .roboto-login-font::placeholder {
-	color: #ffffff;
+	color: #ffffffc6;
 }
 
 
@@ -71,7 +71,6 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
     text-align: center;
 }
 
@@ -112,4 +111,60 @@ img{
 .login-form>hr{
     margin-top: 20px;
     border: 1px white solid;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus {
+  outline: none ;
+  box-shadow: none ;
+}
+
+
+@media all and (max-width:900px) {
+
+    .inter-login-font {
+        font-size: 3.5rem;
+        border-bottom: 0.8rem;
+    }
+
+    .roboto-login-font {
+        font-size: 1.3rem;
+        width: calc(50vw - 2rem);
+    }
+
+    .login-form>button {
+        background: none;
+        border: none;
+        font-size: 1.3rem;
+        color:white;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: bold;
+        font-variation-settings:
+        "wdth" 100;
+    }
+    
+    .login-form>hr{
+        margin-top: 12px;
+    }
+}
+
+
+@media all and (max-width:580px) {
+
+    .inter-login-font {
+        font-size: 3rem;
+        border-bottom: 12px;
+    }
+
+    .roboto-login-font {
+        font-size: 1.3rem;
+        width: calc(52vw - 0.2rem);
+    }
+
+    .login-form>button {
+        padding-left: 0.5rem;
+    }
 }
