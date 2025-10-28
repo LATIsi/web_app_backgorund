@@ -26,6 +26,10 @@ function onloginFormSubmit(event){
 
 // 유저 이름 보이게 하기
 function addGreeting(username){
+    //위에 배경도 추가해서 보여주기
+    const top_bg  = document.createElement("div");
+    top_bg.classList.add("top_bg");
+    document.body.querySelector(".wrap").appendChild(top_bg);
     greeting.innerText = `어서오세요, ${username} 님!`;
     join.classList.remove(hiddenClassName_login);
 }

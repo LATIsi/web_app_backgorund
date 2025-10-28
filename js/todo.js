@@ -28,7 +28,7 @@ function setToDo(newToDoObj){
 
      // newToDoObj가 객체이기에 이렇게 해줘야함!
      span.innerText = newToDoObj.text;
-     toDoDeleteButton.innerText = "X";
+     toDoDeleteButton.innerText = "✖";
 
      // 만든 요소들 li에 추가하고, ul(todolist)에 그 li 추가하기
      li.appendChild(span);

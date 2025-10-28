@@ -1,6 +1,11 @@
 /* sora font */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+
+a{
+  text-decoration: none;
+}
+
 .sora-time-font {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
@@ -8,10 +13,159 @@
   font-size: 7rem;
 }
 
+.font-size18px {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
 
+.join{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+  font-size: 1rem;
+  font-variation-settings:
+    "wdth" 100;
+  background: none;
+  border: none;
+  color:white;
+  width: 70dvw;
+  margin: 0 auto;
+}
 
 #weather> img{
     width: 80px;
     height: auto;
     position: absolute;
+}
+
+.top_bg{
+  width: 100dvw;
+  height: 10dvh;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0, 0.28);
+  z-index: 80;
+}
+
+.todo-form{
+    height: 10dvh;
+    width: auto;
+}
+
+
+.todolist_button{
+  position: absolute;
+  right: 0;
+  top:0;
+  margin-top: 2dvh;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.todolist_button>span{
+  display: block;
+  padding: 0 1rem;
+  color: white;
+  margin-top: 4px;
+}
+
+.todolist_button>img{
+  position: relative;
+  width: 35px;
+  padding-left: 0.5rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.todo_wrap{
+  position: absolute;
+  right: 0.5rem;
+  top:4.4rem;
+  height: auto;
+  padding:1rem 2rem;
+  border-radius: 30px;
+  background-color: #F8F8F8;
+  color:#000000;
+}
+
+.todo_number{
+  display: flex;
+}
+
+.todo_number>span:nth-child(1){
+  flex-grow: 2;
+  text-align: right;
+}
+
+.todo_number>span:nth-child(2){
+  color:#8A8A8A;
+  padding: 0 10px;
+}
+
+.todolist-input{
+  width: 350px;
+  padding: 0.9rem 0;
+  position: relative;
+}
+
+.todolist-text{
+  position: relative;
+  padding: 10px 2.5rem 10px 1.5rem;
+  width: 350px;
+  border-radius: 20px;
+  border: #6F94F2 3px solid;
+}
+
+.todolist-input>button{
+  position: absolute;
+  right: 10px;
+  top:calc(0.9rem + 7px);
+  left:auto;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-color: transparent;
+  background-image: url(../img/ic--outline-plus.png);
+  background-size: 25px auto;
+}
+
+.todo-list{
+  margin-bottom: 3px;
+}
+
+li{
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+li:hover{
+  background-color: #D9D9D9;
+}
+
+li:hover>span{
+  color:rgba(0, 0, 0, 0.5);
+}
+
+li:last-child{
+  border-bottom: none;
+}
+
+li>span{
+  margin-right: 1rem;
+  flex-grow: 2;
+  font-size: 0.875rem;
+}
+
+li>a{
+  margin-right: 0.2rem;
+  color:#747474;
+  cursor: pointer;
 }

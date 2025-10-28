@@ -49,6 +49,7 @@ UI디자인은 figma로 디자인했습니다.
 - html
 - **GitHub Pages 배포**
 - 언스플래쉬, 픽사베이
+- 아이콘 플러그인 iconify (https://iconify.design/) 활용
 - https://openweathermap.org/ 의 무료 API 사용 (그러나 API 키 노출 우려가 있어 .gitignore를 사용해 깃허브 페이지 사용시 위치 정보 적용 안 됨)
 
 </br>
