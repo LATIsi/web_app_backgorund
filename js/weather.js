@@ -5,7 +5,7 @@ import KEY from './API_KEY.js';
 // js키를 불러 사용했더니 보안정책으로 크롬 브라우저가 막아서 라이브서버- http://localhost:5500/ 로 접속해야함
 // 물론 테스트 완료!
 
-const API_KEY = KEY;
+const API_KEY = KEY.apiKey;
 
 // 제대로 작동할 때 나올 함수
 function onGeoOK(position){
@@ -13,12 +13,12 @@ function onGeoOK(position){
      const lat = position.coords.latitude;
      // 사용자의 경도
      const lon = position.coords.longitude;
+     
      // url 맨 뒤에 &units=metric를 넣은 것은 화씨인 온도 값을 섭씨로 바꾸기 위해서
-     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}&lang=KR`;
-   
+     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
+
    
      fetch(url).then( (response) => response.json()).then( (data) =>{
-          
           const temp = document.querySelector("#weather span:first-child");
           const city = document.querySelector("#weather span:last-child");
           const icon = data.weather[0].icon;
