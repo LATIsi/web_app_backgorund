@@ -108,6 +108,7 @@ if(toDoArr !== null){
 function clickToDosButton(event){
      event.preventDefault();
      toDoWrap.classList.toggle(hiddenClassName_todo);
+     console.log(document.querySelector(".todo_wrap").clientHeight);
 }
 
 

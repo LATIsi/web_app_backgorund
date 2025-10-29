@@ -161,8 +161,7 @@ textarea:focus {
     }
 }
 
-
-@media all and (max-width:580px) {
+@media all and (max-width:380px) {
 
     .inter-login-font {
         font-size: 3rem;
@@ -171,10 +170,10 @@ textarea:focus {
 
     .roboto-login-font {
         font-size: 1.3rem;
-        width: calc(52vw - 0.2rem);
+        width: calc(52vw - 2rem);
     }
 
     .login-form>button {
-        padding-left: 0.5rem;
+        padding-left: 1rem;
     }
 }

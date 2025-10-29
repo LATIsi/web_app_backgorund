@@ -14,21 +14,22 @@ function onGeoOK(position){
      // 사용자의 경도
      const lon = position.coords.longitude;
      // url 맨 뒤에 &units=metric를 넣은 것은 화씨인 온도 값을 섭씨로 바꾸기 위해서
-     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-
+     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}&lang=KR`;
+   
+   
      fetch(url).then( (response) => response.json()).then( (data) =>{
           
           const temp = document.querySelector("#weather span:first-child");
           const city = document.querySelector("#weather span:last-child");
           const icon = data.weather[0].icon;
           // 날씨 및 섭씨 지정
-          temp.innerText = `${data.main.temp}`
+          temp.innerText = `${data.main.temp}°`
           // 도시 이름 지정 
           city.innerText = `${data.name}`;
 
           const weather = document.createElement("img");
           weather.src = `https://openweathermap.org/img/wn/${icon}@2x.png`
-          document.body.querySelector("#weather").appendChild(weather);
+          document.body.querySelector(".footer_wrap_top").appendChild(weather);
      });
 
 

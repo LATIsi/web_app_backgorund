@@ -53,9 +53,9 @@ const quotesList = [
      },
 ];
 
-const proverb = document.querySelector("#quote span:nth-child(1)");
-const translation = document.querySelector("#quote span:nth-child(2)");
-const author = document.querySelector("#quote span:nth-child(3)");
+const proverb = document.querySelector(".proverb");
+const translation = document.querySelector(".translation");
+const author = document.querySelector(".author");
 
 // quotesList의 갯수가 10개, Math.random() 은 0.n으로 랜덤이 나오니 0.n * 10(리스트 갯수) = n 번째 명언이 나오는 것
 // 위의 값을 Math.floor로 내려서 어중간하게 0.n이 안나오게 하기
