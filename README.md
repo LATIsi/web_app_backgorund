@@ -93,7 +93,7 @@ index.html을 연다
 
 
 
-# 추가 항목
+# 참고한 홈페이지 / 사진 출처
 
 참고한 자료 등
 
@@ -123,6 +123,7 @@ index.html을 연다
 
 
 - API KEY 제외 관리
+
 <a>https://dalsong-00.tistory.com/60</a>
 
 <br>
@@ -131,6 +132,18 @@ index.html을 연다
 - API KEY 관련 git secret 관리
 
 <a>https://velog.io/@2ast/Github-Github-actions%EC%97%90%EC%84%9C-Secrets%EB%A1%9C-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0</a>
+
+<br>
+
+- API 키 보호를 위해 깃허브 액션 사용하기 & 작성법
+
+<a>https://hackjsp.tistory.com/72</a>
+
+<br>
+
+- [Github] git-page에 secret key 적용하기 (Actions)
+
+<a>https://imhihi.tistory.com/entry/Github-git-page%EC%97%90-secret-key-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-Actions</a>
 
 <br>
 
@@ -156,7 +169,8 @@ index.html을 연다
 
 <br>
 
-- 사용한 이미지의 출처 : 언스플래쉬 (https://unsplash.com/) , 픽사베이 (https://pixabay.com/ko/)
+사용한 이미지의 출처 : 언스플래쉬 (https://unsplash.com/) , 픽사베이 (https://pixabay.com/ko/)
+
 
 <br>
 
