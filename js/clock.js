@@ -3,7 +3,7 @@ const clock = document.querySelector("h2#clock");
 
 function getClock(){
 
-     const weekarr = ["월","화","수","목","금","토","일"];
+     const weekarr = ["일","월","화","수","목","금","토"];
 
      const date = new Date();
      const year  = String(date.getFullYear());
