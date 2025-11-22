@@ -3,7 +3,7 @@
 
 // 현재 위치, 날씨 알려주는 기능
 // js키를 불러 사용했더니 보안정책으로 크롬 브라우저가 막아서 라이브서버- http://localhost:5500/ 로 접속해야함
-//import KEY from './API_KEY.js';
+import KEY from './API_KEY.js';
 
 // 파이어베이스 Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
@@ -14,12 +14,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebas
 // 파이어베이스 데이터베이스 연결 / db연결 문서 찾아서 불러오는것 import
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
    
-
+const OP_API_KEY = KEY.apiKey;
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // 파이어베이스 SDK 설치시 보이는 설정임!
     const firebaseConfig = {
-      apiKey: "AIzaSyD44vBraV0HvgDucomzEr8eIleZoG6CLJE",
+      apiKey: OP_API_KEY,
       authDomain: "myprivacy1111-c02aa.firebaseapp.com",
       projectId: "myprivacy1111-c02aa",
       storageBucket: "myprivacy1111-c02aa.firebasestorage.app",
