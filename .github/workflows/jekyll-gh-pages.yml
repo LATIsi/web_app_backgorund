@@ -32,14 +32,17 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Generate API key file
         run: |
-          echo "const KEY = { apiKey : '${{ secrets.WEATHER_API_KEY }}'} ; export default KEY;" > API_KEY.js   
+          printf "const KEY = { apiKey: '%s' }; export default KEY;\n" "${{ secrets.WEATHER_API_KEY }}" > js/API_KEY.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+          artifact_name: github-pages
 
   # Deployment job
   deploy:
@@ -52,3 +55,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages

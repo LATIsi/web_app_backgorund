@@ -1,1 +1,5 @@
--e "\ninclude:\n  - data" 
+title: My Site
+description:  Jekyll 빌드 할 때 data 폴더를 _site에 포함해줘!! ㅠㅠ
+
+include:
+  - data
