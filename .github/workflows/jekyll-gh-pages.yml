@@ -32,7 +32,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Generate API key file
         run: |
-          printf "const KEY = { apiKey: '%s' }; export default KEY;\n" "${{ secrets.WEATHER_API_KEY }}" > js/API_KEY.js
+          printf "const KEY = { apiKey: '%s' }; export default KEY;\n" "${{ secrets.FIREBASE_STORAGE }}" > js/API_KEY.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
