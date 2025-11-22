@@ -27,14 +27,14 @@ jobs:
        # 1️⃣ API_KEY.js 생성
       - name: Create API key file
         run: |
-          printf "const KEY = { apiKey: '%s' }; export default KEY;\n" "${{ secrets.WEATHER_API_KEY }}" > src/API_KEY.js
+          printf "const KEY = { apiKey: '%s' }; export default KEY;\n" "${{ secrets.WEATHER_API_KEY }}" > js/API_KEY.js
 
       # 2️⃣ API_KEY.js를 artifact로 업로드
       - name: Upload API_KEY.js as artifact
         uses: actions/upload-artifact@v4
         with:
           name: api-key-file
-          path: src/API_KEY.js
+          path: js/API_KEY.js
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
