@@ -1,4 +1,3 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
@@ -27,17 +26,13 @@ jobs:
 
       - name: Generate API key file
         run: |
-          echo "const KEY = { apiKey : '${{ secrets.WEATHER_API_KEY }}'} ; export default KEY;" > API_KEY.js
+          echo "const KEY = { apiKey : '${{ secrets.WEATHER_API_KEY }}'} ; export default KEY;" > js/API_KEY.js
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
-
-      - name: Move API key file into site
-        run: |
-          mv API_KEY.js _site/API_KEY.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
