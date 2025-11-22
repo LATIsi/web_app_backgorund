@@ -2,7 +2,8 @@
 # web_app_backgorund
 
 
-모멘텀 클론 코딩 강의를 따라하며 만든 웹 어플리케이션.
+모멘텀 클론 코딩 강의를 따라하며 만든 웹 어플리케이션. <Br>
+진행하면서 API를 어떻게 관리해야할지 고민해본 좋은 경험이 되었습니다.
 
 <br>
 
@@ -32,7 +33,7 @@ GitHub Pages url : <a>https://LATIsi.github.io/web_app_backgorund</a>
 
 </br>
 
-UI디자인은 figma로 디자인했습니다.
+파비콘 디자인 및 UI디자인은 figma로 디자인했습니다.
 
 </br>
 
@@ -50,7 +51,10 @@ UI디자인은 figma로 디자인했습니다.
 - **GitHub Pages 배포**
 - 언스플래쉬, 픽사베이
 - 아이콘 플러그인 iconify (https://iconify.design/) 활용
-- https://openweathermap.org/ 의 무료 API 사용 (그러나 API 키 노출 우려가 있어 .gitignore를 사용해 깃허브 페이지 사용시 위치 정보 적용 안 됨)
+- https://openweathermap.org/ 의 무료 API 사용
+- 구글 파이어베이스 (위의 날씨 무료 API 노출 보호)
+- 파이어베이스 공개 api 깃허브 secret 변수 사용 및 깃허브 액션 사용
+  (yml파일, secret 사용한 이유는 공개적으로 api공개하면 보안 메일이 오기에.)
 
 </br>
 
@@ -162,6 +166,24 @@ index.html을 연다
 - 폰트 px->rem 변환기
 
 <a>https://nekocalc.com/px-to-rem-converter</a>
+
+<br>
+
+- Firestore Database에서 데이터 가져오는 법 (읽기)
+
+<a>https://codingapple.com/unit/firebase-firestore-read/</a>
+
+<br>
+
+- Firestore 데이터베이스 가져오기. getDoc과 onSnapshot의 차이는?
+
+<a>https://s-ryung.tistory.com/78</a>
+
+<br>
+
+- imageresizer (파비콘 변환 홈페이지)
+
+<a>https://imageresizer.com/ko/%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%ED%99%98%EA%B8%B0/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/6921d99972883df207ec078d</a>
 
 <br>
 
